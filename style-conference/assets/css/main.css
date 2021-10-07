@@ -1,27 +1,26 @@
+/*
+========================================
+Custom styles
+========================================
+*/
+
 body {
-    background: #11703f03;
+    background: #11073fe3;
     color: rgb(39, 58, 110);
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica New", Helvetica, Arial, sans-serif;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 /*
     ========================
     Grid
     ========================
 */
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
             box-sizing: border-box;
-}
-
-
-.container {
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 960px;
 }
 
 .group:before, .group:after {
@@ -72,14 +71,63 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.tagline {
+    margin: 66px 0 22px 0;
+}
+
 /*
     ========================
     Typography
     ========================
 */
 
+h1, h2, h3, h4 {
+    color: #6c89db;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #4568c9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
 h1, h3, h4, h5, p {
     margin-bottom: 22px;
+}
+
+a {
+    color: #6c89db;
+}
+
+a:hover {
+    color: #a9b2b9;
 }
 
 /*
@@ -106,7 +154,20 @@ h1, h3, h4, h5, p {
 */
 
 .hero {
+    line-height: 44px;
     padding: 22px 80px 66px 80px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.teaser a:hover h3 {
+    color: #a9b2b9;
 }
 
 /*
@@ -116,6 +177,8 @@ h1, h3, h4, h5, p {
 */
 
 .primary-footer {
+    color: #6c89db;
+    font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
 }
@@ -123,4 +186,15 @@ h1, h3, h4, h5, p {
 .primary-footer small {
     float: left;
     font-weight:400;
+}
+
+/*
+    ========================
+    Navigation
+    ========================
+*/
+
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
 }
