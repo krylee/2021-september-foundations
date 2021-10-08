@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("vector-speaker-1680x1050.jpg");
+    width: auto;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
