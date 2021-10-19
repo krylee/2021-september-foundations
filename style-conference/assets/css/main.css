@@ -63,6 +63,7 @@ Clearfix
 
 .group:after {
     clear:both;
+    display: table;
 }
 
 .group {
@@ -82,15 +83,14 @@ Rows
 
 .row {
     background: #fff;
-    min-width: 960px;
     padding: 66px 0 44px 0;
 }
 
 .row-alt {
     background: #cbe2c1;
-    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -webkit-linear-gradient(to right, #8ea4cf, #b3d7e5);
+    background: -moz-linear-gradient(to right, #8ea4cf, #b3d7e5);
+    background: linear-gradient(to right, #8ea4cf, #b3d7e5);
     padding: 44px 0 22px 0;
 }
 
@@ -199,7 +199,18 @@ p a {
 
 .btn-alt:hover {
     background: #fff;
-    color: #647188;
+    color: #668cc9;
+}
+
+.btn-default {
+    border: 0;
+    background: #648880;
+    padding: 11px 30px;
+    font-size: 14px;
+}
+
+.btn-default:hover {
+    background: #77a198;
 }
 
 /*
@@ -233,7 +244,7 @@ Primary header
 }
 
 .primary-header a:hover {
-    color: #a9b2b9;
+    color: #acb8d8;
 }
 
 /*
@@ -259,7 +270,7 @@ Primary header
 }
 
 .primary-footer a:hover {
-    color: #a9b2b9;
+    color: #acb8d8;
 }
 
 /*
@@ -308,6 +319,13 @@ Primary header
     color: #a9b2b9;
 }
 
+.teaser img {
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 22px;
+    max-width: 100%;
+}
+
 /*
 ========================================
 Speakers
@@ -315,15 +333,22 @@ Speakers
 */
 
 .speaker-info {
-    border: 1pz solid #dfe2e5;
+    border: 1px solid #dfe2e5;
     border-radius: 5px;
     margin-top: 88px;
-    padding: 22px 0;
+    padding-bottom: 22px;
     text-align: center;
 }
 
 .speaker {
     margin-bottom: 44px;
+}
+
+.speaker-info img {
+    border-radius: 50%;
+    height: 130px;
+    margin: -66px 0 22px 0;
+    vertical-align: top;
 }
 
 /*
@@ -414,3 +439,44 @@ Venue
 Register
 ========================================
 */
+
+.why-attend {
+    list-style: square;
+    margin: 0 0 22px 30px;
+}
+
+form {
+    margin-bottom: 22px;
+}
+
+input, select, textarea {
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.register-group label {
+    color: #648880;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.register-group input, .register-group select, .register-group text-area {
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
+    color: #888;
+    display: block;
+    margin: 5px 0 27px 0;
+    padding: 5px 8px;
+}
+
+.register-group input, .register-group textarea {
+    width: 100%;
+}
+
+.register-group select {
+    height: 34px;
+    width: 60px;
+}
+
+.register-group textarea {
+    height: 78px;
+}
