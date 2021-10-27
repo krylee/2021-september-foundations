@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While and do-while loops</title>
+</head>
+<body>
+    <h1>While and do-while loops</h1>
+
+    <script>
+        var i = 3;
+        while (i <= 10) {
+            console.log("First while loop - i is ");
+            i++;
+        }
+
+        var j = 12;
+        while (j <= 10) {
+            console.log("Second while loop - j is " + j);
+            j++;
+        }
+
+        var k = 12;
+        do {
+            console.log("Do while loop - k is " + k);
+            k++;
+        } while (k <= 10); 
+        console.log("done with do-while loop");
+
+        function addTwoNumbers() {
+            var total = 2 + 3;
+            console.log(total);
+        }
+
+        addTwoNumbers();
+
+
+        function subtractTwoNumbers(num1, num2) {
+            var total = num1 - num2;
+            console.log(total);
+        }
+
+        subtractTwoNumbers(8, 5);
+
+        var x = 1;
+
+        function increaseX() {
+            x = 2;
+            x = x + 3;
+        }
+
+        console.log("before increaseX, x = " + x);
+        increaseX();
+        console.log("after increaseX, x =" +x);
+
+        function increaseY() {
+            var y = 3;
+            y = y + 2;
+        }
+
+        increaseY();
+        //console.log("after increaseY, y =" + y);
+
+        var z = 3;
+
+        function increaseZ() {
+            var z = 2;
+            console.log("In function, before increase z =" + z);
+            z = z + 5;
+            console.log("In function, after increase z =" + z)
+        }
+
+        console.log("before increaseZ function, z = " + z);
+        increaseZ();
+        console.log("after increaseZ function, z = " + z);
+
+        
+    </script>
+</body>
+</html>
