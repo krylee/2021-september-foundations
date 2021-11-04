@@ -1,0 +1,81 @@
+html body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: #330066;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #330066;
+}
+
+header > span {
+    margin-left: 10vw;
+    font-size: 1.5em;
+    line-height: 5rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    font-weight: 800;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 3vw;
+    line-height: 5em;
+    vertical-align: middle;
+}
+
+nav > a:hover {
+    color: #ac00e6;
+}
+
+#home {
+    background-image: url("../images/purpbkgrd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center top;
+}
+
+h1 {
+    font-family: League Script, cursive;
+    font-size: 7em;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+main > a {
+    position: absolute;
+    text-align: center;
+    color: white;
+    left: 50%;
+    top: 75%;
+    font-size: 1rem;
+    padding: .75em 2em;
+    border: 1px solid transparent;
+    border-radius: 3em;
+    background-color: #ff00ff;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+}
