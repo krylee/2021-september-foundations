@@ -1,24 +1,40 @@
 html body {
-        font-size: 5vh;
-    }
+    font-size: 2vh;
+}
 
-    nav {
-        flex-direction: column;
-        display: none;
-        right: 2vw;
-        top: 2vh;
-        width: 12ch;
-        align-items: center;
-    }
+nav {
+    flex-direction: column;
+    display: none;
+    right: 2vw;
+    top: 2vh;
+    width: 12ch;
+    align-items: center;
+}
 
-    #menu {
-        display: block;
-    }
+#menu {
+    display: block;
+    font-size: 2em;
+}
 
-    .menu-show {
-        display: flex;
-    }
+.menu-show {
+    display: flex;
+}
 
-    main, .teaser {
-        flex-direction: column;
-    }
+main {
+    white-space: normal;
+    font-size: 1em;
+}
+
+main a {
+    border-width: 0;
+    padding-top: calc(.5em + 3px);
+    padding-bottom: calc(.5em + 3px);
+    background: linear-gradient(90deg, blue, lightblue, turquoise);
+}
+
+.teaser {
+    flex-direction: column;
+    font-size: 1em;
+    top: 125vh;
+    text-align: center;
+}

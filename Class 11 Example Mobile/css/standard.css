@@ -117,3 +117,9 @@ main a:hover {
     color: turquoise;
     margin-right: 0.25em;
 }
+
+#menu {
+    display: none;
+    position: right fixed;
+    z-index: 2;
+}
