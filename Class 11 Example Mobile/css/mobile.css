@@ -1,14 +1,4 @@
-#menu {
-    display: none;
-    position: fixed;
-    top: 2vh;
-    right: 2vw;
-    z-index: 2;
-}
-
-@media screen and (hover:none) and (orientation:portrait) {
-    
-    html body {
+html body {
         font-size: 5vh;
     }
 
@@ -32,4 +22,3 @@
     main, .teaser {
         flex-direction: column;
     }
-}
