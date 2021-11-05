@@ -1,0 +1,35 @@
+#menu {
+    display: none;
+    position: fixed;
+    top: 2vh;
+    right: 2vw;
+    z-index: 2;
+}
+
+@media screen and (hover:none) and (orientation:portrait) {
+    
+    html body {
+        font-size: 5vh;
+    }
+
+    nav {
+        flex-direction: column;
+        display: none;
+        right: 2vw;
+        top: 2vh;
+        width: 12ch;
+        align-items: center;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .menu-show {
+        display: flex;
+    }
+
+    main, .teaser {
+        flex-direction: column;
+    }
+}
