@@ -173,7 +173,7 @@ article::before {
     z-index: -1;
 }
 
-#intro {
+#intro, .boxes {
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 10vw;
