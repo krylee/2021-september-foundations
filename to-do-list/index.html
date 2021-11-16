@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9764e17a4b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>To Do List</title>
     <style>
         body {
+            font-family: Ubuntu, sans-serif;
+            color: #550080;
             margin: 0;
             box-sizing: border-box;
-            background-color: antiquewhite;
+            background-color: #f9ecf2;
         }
 
         #work {
@@ -18,22 +22,62 @@
             float: left;
             display: inline-block;
             min-height: 20vh;
-            border: 1px solid black;
-            background-color: lightblue;
+            border: 1px solid #550080;
+            background-color:#ff99ff;
+            box-shadow: 2px 2px 4px #550080;
         }
 
         #home {
             width: 30vw;
             display: inline-block;
             min-height: 20vh;
-            border: 1px solid black;
-            background-color: lightgreen;
+            border: 1px solid #550080;
+            background-color: #d580ff;
+            box-shadow: 2px 2px 4px #550080;
         }
 
         div {
             margin: 2vw 5vw;
             text-align: center;
         }
+
+        .task {
+            vertical-align: middle;
+            font-size: 1.5em;
+        }
+
+        button {
+            background-color: white;
+            box-shadow: 2px 2px 4px #550080;
+            color: #550080;
+            border: none;
+            padding: 3px 15px;
+        }
+
+        button:hover {
+            background-color: #550080;
+            color: white;
+            padding: 3px 15px;
+        }
+
+        #choice {
+            background-color: #550080;
+            color: white;
+            border: none;
+            padding: 3px;
+        }
+
+        #input {
+            border: none;
+            box-shadow: 2px 2px 4px #550080;
+        }
+        
+        #remove {
+            color: #550080; 
+            font-size: .75em;
+            padding-left: 25px;
+        }
+
     </style>
 </head>
 
@@ -64,7 +108,7 @@
 
             function checkIfTaskIsEmpty() {
                 let taskDesc = $("#input").val();
-                if (taskDesc == "") {
+                if (taskDesc.trim() == "") {
                     $(".mustAdd").remove();
                     $(".container").append("<div class='mustAdd'><span>You must include a task to add</span></div>")
                 } else {
@@ -73,10 +117,21 @@
                 }
             }
 
+            $("#input").keypress(function(){
+                if (event.which == 13) {
+                    checkIfTaskIsEmpty();
+                }
+            })
+
             function addTaskDescription(taskDesc) {
                 let choice = $("select").val();
-                $("#"+choice).append("<div><span>" + taskDec + "</span></div>")
+                $("#"+choice).append("<div class='task'><span>" + taskDesc + "<span id='remove'><i class='fas fa-times'></i></span></span></div>");
+                $("#input").val("");
             }
+
+            $("body").on("click", "#remove", function() {
+                $(this).parent().remove();
+            });
         });
     </script>
 </body>
