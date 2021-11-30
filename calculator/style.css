@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+}
+
+#calculator {
+    width: 50vmin;
+    font-size: 5vmin;
+    background-color: blue;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#display {
+    color: white;
+    background-color: black;
+    width: 93%;
+    display: inline-block;
+    text-align: right;
+    padding: 1%;
+    margin: 2.5%;
+}
+
+#buttons {
+    position: relative;
+}
+
+button {
+    margin: 2.5%;
+    float: left;
+    padding: 0.25em;
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 0.25em;
+    color: darkblue;
+    width: 20%;
+    font-size: inherit;
+    box-shadow: 2px 2px 2px black;
+}
