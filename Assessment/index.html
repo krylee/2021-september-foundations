@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/standard.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(hover:none) and (orientation:portrait)">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9764e17a4b.js" crossorigin="anonymous"></script>
     <title>Orange is the New Cat</title>
 </head>
 <body>
@@ -19,11 +20,41 @@
         <p>Kitty is no ordinary kitten. He's a superhero, too!</p>
     </div>
 
+    <div id="schedule">
+        <img class ="close" src="images/close.png" alt="close icon">
+        <table>
+            <tr>
+                <td>Silly Kitty</td>
+                <td>The first episode in which we meet a very silly kitty.</td>
+                <td>7/05/2016</td>
+            </tr>
+            <tr>
+                <td>Trouble in Orange</td>
+                <td>Silly kitty gets lost and spends the night in lockup.</td>
+                <td>7/12/2016</td>
+            </tr>
+            <tr>
+                <td>Claws of Fury</td>
+                <td>Ninja cat attacks the home and silly kitty must defend his family!</td>
+                <td>7/19/2016</td>
+            </tr>
+        </table>
+    </div>
+    <div id="contact">
+        <p>
+            (402)555-5555 <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+        </p>
+    </div>
+
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#schedule">Schedule</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/orange.js"></script>
 </body>
 </html>

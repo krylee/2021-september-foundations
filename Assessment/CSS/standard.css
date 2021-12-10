@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     font-family: Montserrat, sans-serif;
+    font-size: 1em;
 }
 
 header {
@@ -21,14 +22,15 @@ header h1 {
     text-shadow: 3px 3px #737373;
 }
 
+header > p > img:hover {
+    animation: rotate 1s 1;
+}
+
 header > p > img {
     width: 125px;
     padding: 10px 20px;
     vertical-align: middle;
-}
-
-header > p > img:hover {
-    animation: rotate 1s infinite;
+    animation: rotate-out 1s 1;
 }
 
 #main {
@@ -64,7 +66,56 @@ nav > a {
     padding: 15px;
 }
 
+#schedule {
+    visibility: hidden;
+    position: absolute;
+    width: 500px;
+    border: 1px solid #ff9900;
+    color: #ff9900;
+    border-radius: .5em;
+    background-color: black;
+    opacity: .75;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+    z-index: 4;
+}
+
+#schedule.show {
+    visibility: visible;
+}
+
+#contact {
+    visibility: hidden;
+    position: absolute;
+    width: 500px;
+    border: 1px solid #ff9900;
+    border-radius: .5em;
+    background-color: black;
+    opacity: .75;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact.show {
+    visibility: visible;
+}
+
 @keyframes rotate {
     from {transform:rotateY(0deg);}
     to {transform:rotateY(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform:rotateY(0deg);}
+    to {transform: rotateY(360deg)}
 }

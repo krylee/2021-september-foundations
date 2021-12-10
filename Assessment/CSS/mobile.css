@@ -1,0 +1,18 @@
+html, body {
+    font-size: 1vh;
+}
+
+#main {
+    background-image: url(../images/kitten-v.jpg);
+    background-size: cover;
+}
+
+#schedule {
+    width: 30%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
