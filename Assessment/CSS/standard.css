@@ -43,7 +43,12 @@ header > p > img {
 }
 
 #hero-page {
-    display: none;
+    background-image: url(../images/kitten-flying.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center top;
 }
 
 nav {
@@ -64,6 +69,10 @@ nav > a {
     text-shadow: 2px 2px #737373;
     font-weight: 600;
     padding: 15px;
+}
+
+nav > a:hover {
+    transform: translateY(-30px);
 }
 
 #schedule {
@@ -96,8 +105,15 @@ nav > a {
 #contact {
     visibility: hidden;
     position: absolute;
-    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    width: 200px;
     border: 1px solid #ff9900;
+    color: #ff9900;
+    text-align: center;
+    line-height: 1vh;
+    padding: 10px;
     border-radius: .5em;
     background-color: black;
     opacity: .75;
@@ -106,8 +122,14 @@ nav > a {
     transform: translate(-50%, -50%);
 }
 
-#contact.show {
+#contact.spin {
     visibility: visible;
+    animation: cartwheel 1s 1;
+}
+
+#contact.spinrev {
+    visibility: visible;
+    animation: cartwheel 1s 1 reverse;
 }
 
 @keyframes rotate {
@@ -119,3 +141,19 @@ nav > a {
     from {transform:rotateY(0deg);}
     to {transform: rotateY(360deg)}
 }
+
+@keyframes cartwheel {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+        top: 50%;
+        left: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
