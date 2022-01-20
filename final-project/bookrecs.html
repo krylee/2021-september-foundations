@@ -11,15 +11,46 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
             <a href="parents.html">Parents</a>
-            <a href="students.html">Students</a>
+            <div class="dropdown">
+                <button class="dropbtn">Students</button>
+                <div class="dropdown-content">
+                    <a href="english3-4.html">English 3-4</a>
+                    <a href="english5-6.html">English 5-6</a>
+                    <a href="affective-skills.html">Affective Skills</a>
+                </div>
+            </div>
             <a href="bookrecs.html">Book Recommendations</a>
         </nav>
     </header>
-
+    <article>
+        <section id="bookrecs">
+            <p>
+                Looking for a new book to read? Below, you'll find some suggestions that might fit the bill. Hover 
+                over the cards below to flip them and find a book suggestion for each category.
+            </p>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="card-front">
+                        <img class="card-img" src="images/ivan-aleksic-CSjkhuH_bEo-unsplash.jpg" alt="A deserted railroad track">
+                        <div class="card-text">I want something about the apocalypse!</div>
+                    </div>
+                    <div class="card-back">
+                        <h3>You might enjoy World War Z!</h3>
+                            <p>
+                                This novel is a compilation of interviews after a virus turned hoardes of humans into zombies, 
+                                resulting in a worldwide zombie war. The main character is a reporter who catalogues accounts of 
+                                people from many different walks of life who each have unique perspectives on the zombie war, from 
+                                rock stars to high-ranking military officials. An audio version is also available and read by a full cast.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
     <footer>
         <nav>
             <a href="index.html">Home</a>
