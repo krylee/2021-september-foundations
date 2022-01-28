@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Montserrat, Helvetica, sans-serif;
     margin: 0;
     font-size: large;
+    background-image: linear-gradient(to bottom right, #000, #ff9999);
 }
 
+/* Nav elements */
 .navbar {
     overflow: hidden;
     background-color: #000;
@@ -64,6 +70,7 @@ body {
     display: block;
 }
 
+/* Home Page */
 #home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
     background-repeat: no-repeat;
@@ -91,6 +98,8 @@ body {
     line-height: 1em;
 }
 
+/* footer element */
+
 footer {
     background-color: #000;
     bottom: 0;
@@ -103,16 +112,111 @@ footer a {
     font-size: 0.75em;
 }
 
-.about {
-    margin: 5em;
-    text-align: left;
+/* About page */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#bio img {
-    height: 290px;
-    float: left;
-    padding: 15px;
+h3 {
+    font-family: "Shadows into Light", sans-serif;
+    font-size: 2em;
+    text-align: center;
 }
+
+.col-1 {
+    flex: 30%;
+    padding: 20px;
+}
+
+.col-1 > img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border: solid #fff;
+    border-width: 6px 6px 20px 6px;
+    box-shadow: 1px 1px 5px #333;
+    -webkit-box-shadow: 1px 1px 5px #333;
+    -moz-box-shadow: 1px 1px 5px #333;
+    transform: rotate(-6deg);
+}
+
+.post-it-1, .post-it-2 {
+    font-size: .75em;
+    line-height: 1em;
+    background: #fff;
+    display: block;
+    height: 300px;
+    width: 100%;
+    padding: 1em 2em;
+    border: 1px solid black;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transform: rotate(-6deg);
+}
+
+.post-it-1 {
+    transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+}
+
+.post-it-1:hover,
+.post-it-2:hover {
+    background: #ff9999;
+}
+
+.col-2 {
+    flex: 70%;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    margin: 40px auto;
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.box::before {
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
+}
+
+.box::after {
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
+}
+
+.box:hover::before,
+.box:hover::after {
+    box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.box:hover::before {
+    left: 5px;
+}
+
+.box:hover::after {
+    right: 5px;
+}
+
+/* Book recommendations */
 
 #bookrecs {
     margin-left: 10%;
@@ -172,3 +276,28 @@ footer a {
     transform: rotateY(180deg);
 }
 
+/* Course Pages */
+
+/* Parent Page */ 
+
+.column {
+    margin-top: 30px;
+    float: right;
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+}
+
+.column > img {
+    width: 100%;
+}
+
+/* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+#curr-desc {
+    margin: 30px;
+}
