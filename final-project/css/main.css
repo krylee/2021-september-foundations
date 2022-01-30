@@ -253,7 +253,7 @@ h3 {
     color: #fff;
 }
 
-#bookrecs p {
+#bookrecs > p {
     margin-right: 20%;
 }
 
