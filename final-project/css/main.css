@@ -108,15 +108,24 @@ h1 {
 /* footer element */
 
 footer {
+    position: relative;
     background-color: #000;
     bottom: 0;
+    height: 2em;
     width: 100%;
 }
 
 footer a {
     text-decoration: none;
     color: white;
-    font-size: 0.75em;
+    font-size: 1em;
+    margin-left: 30%;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    background-color: #ff9999;
+    color: #000;
 }
 
 /* About page */
@@ -244,6 +253,10 @@ h3 {
     color: #fff;
 }
 
+#bookrecs p {
+    margin-right: 20%;
+}
+
 .flip-card {
     margin: 2em;
     background-color: transparent;
@@ -282,7 +295,7 @@ h3 {
 
 .card-text {
     position: absolute;
-    padding: 10px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.5);
     top: 50%;
     left: 50%;
@@ -299,13 +312,19 @@ h3 {
     transform: rotateY(180deg);
 }
 
-.flip-card button {
+.warn-btn {
     background-color: #000;
     color: white;
     padding: 3em;
     height: 500px;
     width: 500px;
-    font-size: 3em;
+    font-size: 2em;
+}
+
+#txt-alert {
+    display: none;
+    background-color: red;
+    font-size: 4em;
 }
 
 /* Course Pages */
